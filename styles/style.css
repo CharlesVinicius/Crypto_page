@@ -22,7 +22,6 @@ nav{
     display: flex;
     align-items: center;
     padding:  2% 5%; 
-    
 }
 
 nav ul{
@@ -30,6 +29,7 @@ nav ul{
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;
+    flex-wrap: wrap;
 }
 
 
@@ -102,4 +102,55 @@ nav .btn{
 .coin img{
     width: 40px;
     margin-right: 10px;
+}
+
+
+/*responsividade*/
+
+@media(max-width:580px){
+    .conteudo h1{
+        font-size: 50px;
+        max-width: 390px;
+        margin-bottom: 50px;
+    }
+    
+    .conteudo span{
+        font-size: 60px;
+        max-width: 390px;
+        color: orange;
+    }
+
+    nav ul li a{
+        color: white;
+        margin-left: 30px;
+       
+    }
+
+    .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+
+    nav{
+       padding: 25px;
+    }
+
+    .coin{
+        width: 70px;
+        
+    }
+
+    .coin h3{
+        font-size: 12px;
+    }
+
+    .coin-list{
+        left: 5px;
+    }
+
+    .coin img{
+        width: 35px;
+        margin-left: -20px;
+    }
+
 }
